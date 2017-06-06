@@ -1,51 +1,39 @@
-set nocompatible
-set autoindent
-set expandtab
-set tabstop=4
-set shiftwidth=4
-set cursorline
-set number
-set smartcase
-
-" $VIMRUNTIME/syntax/php.vim
-let php_sql_query           = 1
-let php_baselib             = 1
-let php_htmlInStrings       = 1
-let php_noShortTags         = 1
-let php_parent_error_close  = 1
-
 "dein Scripts-----------------------------
 if &compatible
   set nocompatible               " Be iMproved
 endif
 
 " Required:
-set runtimepath+=/home/vagrant/.cache/dein/repos/github.com/Shougo/dein.vim
+set runtimepath+=~/.vim/bundles/repos/github.com/Shougo/dein.vim
 
-" Required:
-call dein#begin('/home/vagrant/.cache/dein')
+if dein#load_state('~/.vim/bundles')
+  call dein#begin('~/.vim/bundles')
 
-" Let dein manage dein
-" Required:
-call dein#add('Shougo/dein.vim')
+  " Let dein manage dein
+  " Required:
+  call dein#add('~/.vim/bundles/repos/github.com/Shougo/dein.vim')
 
-" Add or remove your plugins here:
-call dein#add('Shougo/neosnippet.vim')
-call dein#add('Shougo/neosnippet-snippets')
+  " Add or remove your plugins here:
+  call dein#add('Shougo/neosnippet.vim')
+  call dein#add('Shougo/neosnippet-snippets')
+  call dein#add('Shougo/neocomplete.vim')
+  call dein#add('Shougo/vimshell')
+  call dein#add('tomasr/molokai')
+  call dein#add('mattn/emmet-vim')
 
-" You can specify revision/branch/tag.
-call dein#add('Shougo/vimshell')
-
-" Required:
-call dein#end()
+  " Required:
+  call dein#end()
+  call dein#save_state()
+endif
 
 " Required:
 filetype plugin indent on
+syntax enable
 
 " If you want to install not installed plugins on startup.
-if dein#check_install()
-  call dein#install()
-endif
+"if dein#check_install()
+"  call dein#install()
+"endif
 
 "End dein Scripts-------------------------
 
@@ -67,4 +55,13 @@ if has('conceal')
   set conceallevel=2 concealcursor=i
 endif
 
-syntax on
+set autoindent
+set expandtab
+set tabstop=4
+set shiftwidth=4
+set number
+set smartcase
+set incsearch
+colorscheme molokai
+set t_Co=256
+set cursorline
