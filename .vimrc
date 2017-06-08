@@ -26,6 +26,11 @@ if dein#load_state('~/.vim/bundles')
   call dein#save_state()
 endif
 
+" install new plugin
+if has('vim_starting') && dein#check_install()
+  call dein#install()
+endif
+
 " Required:
 filetype plugin indent on
 syntax enable
