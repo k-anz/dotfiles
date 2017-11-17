@@ -4,14 +4,24 @@ if &compatible
 endif
 
 " Required:
-set runtimepath+=~/.vim/bundles/repos/github.com/Shougo/dein.vim
+" set runtimepath+=~/.vim/bundles/repos/github.com/Shougo/dein.vim
+" dein detup
+let s:dein_dir = $HOME . '/.vim/bundles'
+let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
 
-if dein#load_state('~/.vim/bundles')
-  call dein#begin('~/.vim/bundles')
+if &runtimepath !~# '/dein.vim'
+  if !isdirectory(s:dein_repo_dir)
+    execute '!git clone https://github.com/Shougo/dein.vim' s:dein_repo_dir
+  endif
+  execute 'set runtimepath^=' . fnamemodify(s:dein_repo_dir, ':p')
+endif
+
+if dein#load_state(s:dein_dir)
+  call dein#begin(s:dein_dir)
 
   " Let dein manage dein
   " Required:
-  call dein#add('~/.vim/bundles/repos/github.com/Shougo/dein.vim')
+  call dein#add(s:dein_repo_dir)
 
   " Add or remove your plugins here:
   call dein#add('Shougo/neosnippet.vim')
