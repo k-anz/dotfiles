@@ -23,13 +23,10 @@ if dein#load_state(s:dein_dir)
   " Required:
   call dein#add(s:dein_repo_dir)
 
-  " Add or remove your plugins here:
-  call dein#add('Shougo/neosnippet.vim')
-  call dein#add('Shougo/neosnippet-snippets')
-  call dein#add('Shougo/neocomplete.vim')
-  call dein#add('Shougo/vimshell')
-  call dein#add('tomasr/molokai')
-  call dein#add('mattn/emmet-vim')
+  " load from toml
+  let s:toml_dir = $HOME . '/.vim/rc/'
+  call dein#load_toml(s:toml_dir . 'dein.toml', {'lazy': 0})
+  call dein#load_toml(s:toml_dir . 'dein_lazy.toml', {'lazy': 1})
 
   " Required:
   call dein#end()
