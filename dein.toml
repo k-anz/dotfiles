@@ -5,7 +5,7 @@ repo = 'Shougo/neosnippet.vim'
 repo = 'Shougo/neosnippet-snippets'
 
 [[plugins]]
-repo = 'Shougo/neocomplete.vim'
+repo = 'Shougo/neocomplcache.vim'
 
 [[plugins]]
 repo = 'Shougo/vimshell'
