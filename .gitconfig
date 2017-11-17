@@ -16,3 +16,5 @@
         dfw = diff --word-diff
         dfn = diff --name-only
         dfs = diff --stat
+[color]
+        ui = auto
