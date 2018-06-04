@@ -1,7 +1,7 @@
 #!/bin/bash
 
 SCRIPT_DIR=$(cd $(dirname $0); pwd)
-DOT_FILES=(.vimrc .gitconfig .bashrc)
+DOT_FILES=(.vimrc .gitconfig .bash_profile .bashrc)
 
 for file in ${DOT_FILES[@]}
 do
