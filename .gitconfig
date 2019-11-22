@@ -1,6 +1,6 @@
 [user]
 	email = 
-	name = Kyoko ANZAI
+	name = Kyoko OZAKI
 [push]
 	default = nothing
 [credential]
@@ -16,5 +16,6 @@
         dfw = diff --word-diff
         dfn = diff --name-only
         dfs = diff --stat
+        dfc = diff --cached
 [color]
         ui = auto
