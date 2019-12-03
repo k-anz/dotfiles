@@ -5,7 +5,3 @@ on_ft = ['md', 'markdown']
 [[plugins]]
 repo = 'cespare/vim-toml'
 on_ft = ['toml']
-
-[[plugins]]
-repo = 'vim-scripts/PDV--phpDocumentor-for-Vim'
-on_ft = ['php']
