@@ -97,23 +97,14 @@ inoremap <expr><BS> neocomplcache#smart_close_popup()."\<C-h>"
 inoremap <expr><C-y>  neocomplcache#close_popup()
 inoremap <expr><C-e>  neocomplcache#cancel_popup()
 
+map <Leader>mn  :MemoNew<CR>
+map <Leader>ml  :MemoList<CR>
+map <Leader>mg  :MemoGrep<CR>
+
 " For snippet_complete marker.
 if has('conceal')
   set conceallevel=2 concealcursor=i
 endif
-
-" phpDocumentator key mapping
-let g:pdv_cfg_Type = "mixed"
-let g:pdv_cfg_Package = ""
-let g:pdv_cfg_Version = ""
-let g:pdv_cfg_Author = "k_anzai"
-let g:pdv_cfg_Copyright = ""
-let g:pdv_cfg_License = ""
-let g:pdv_cfg_ReturnVal = "void"
-
-inoremap <C-P> <Esc>:call PhpDocSingle()<CR>i
-nnoremap <C-P> :call PhpDocSingle()<CR>
-vnoremap <C-P> :call PhpDocSingle()<CR>
 
 set autoindent
 set expandtab
@@ -125,3 +116,7 @@ set incsearch
 colorscheme molokai
 set t_Co=256
 set cursorline
+
+set foldmethod=syntax
+let perl_fold=1
+set foldlevel=100 "Don't autofold anything
