@@ -120,3 +120,5 @@ set cursorline
 set foldmethod=syntax
 let perl_fold=1
 set foldlevel=100 "Don't autofold anything
+
+set clipboard+=unnamed
