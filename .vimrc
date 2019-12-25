@@ -108,8 +108,8 @@ endif
 
 set autoindent
 set expandtab
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set number
 set smartcase
 set incsearch
@@ -122,3 +122,7 @@ let perl_fold=1
 set foldlevel=100 "Don't autofold anything
 
 set clipboard+=unnamed
+set backspace=indent,eol,start
+
+set list
+set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
