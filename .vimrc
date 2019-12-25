@@ -101,11 +101,6 @@ map <Leader>mn  :MemoNew<CR>
 map <Leader>ml  :MemoList<CR>
 map <Leader>mg  :MemoGrep<CR>
 
-" For snippet_complete marker.
-if has('conceal')
-  set conceallevel=2 concealcursor=i
-endif
-
 set autoindent
 set expandtab
 set tabstop=2
