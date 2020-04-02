@@ -1,16 +1,4 @@
 [[plugins]]
-repo = 'Shougo/neosnippet.vim'
-
-[[plugins]]
-repo = 'Shougo/neosnippet-snippets'
-
-[[plugins]]
-repo = 'Shougo/neocomplcache.vim'
-
-[[plugins]]
-repo = 'Shougo/vimshell'
-
-[[plugins]]
 repo = 'tomasr/molokai'
 
 [[plugins]]
