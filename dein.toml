@@ -1,3 +1,15 @@
+[[plugins]]
+repo = 'prabirshrestha/async.vim'
+merged = 0
+
+[[plugins]]
+repo = 'prabirshrestha/vim-lsp'
+merged = 0
+
+[[plugins]]
+repo = 'mattn/vim-lsp-settings'
+merged = 0
+
 # deoplete
 [[plugins]]
 repo = 'Shougo/deoplete.nvim'
@@ -15,6 +27,8 @@ repo = 'roxma/nvim-yarp'
 [[plugins]]
 repo = 'roxma/vim-hug-neovim-rpc'
 
+[[plugins]]
+repo = 'lighttiger2505/deoplete-vim-lsp'
 [[plugins]]
 repo = 'tomasr/molokai'
 
