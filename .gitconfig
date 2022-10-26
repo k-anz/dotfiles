@@ -19,3 +19,5 @@
         dfc = diff --cached
 [color]
         ui = auto
+[init]
+	templatedir = ~/.git_template

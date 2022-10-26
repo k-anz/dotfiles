@@ -1,8 +1,0 @@
-[[plugins]]
-repo = 'tomasr/molokai'
-
-[[plugins]]
-repo = 'mattn/emmet-vim'
-
-[[plugins]]
-repo = 'glidenote/memolist.vim'
