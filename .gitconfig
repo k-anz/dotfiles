@@ -20,4 +20,6 @@
 [color]
         ui = auto
 [init]
-	templatedir = ~/.git_template
+        templatedir = ~/.git_template
+[core]
+	editor = nvim
